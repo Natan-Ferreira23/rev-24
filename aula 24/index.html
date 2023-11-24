@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title> Teste</title>
+</head>
+<body>
+    <div class="container">
+     <div class="row">
+        
+        <div class="col text-center p-3">
+            <h1> Revisão</h1>
+
+        </div>
+     </div>
+     <div class="row">
+        <div class="col-md-8 border">
+          <!--<form>-->   
+                <div> 
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" required id="nome">
+
+                </div>
+                <div>
+                    <label for="estilo" class="form-label">Estilo musical</label>
+                    <div class="form-check form-check-inlines">
+                        <input type="checkbox" class="form-check-input" id="rock" value="rock">
+                        <label for="rock" class="form-check-label"> Rock</label>
+                    </div>
+                    <div class="form-check form-check-inlines">
+                        <input type="checkbox" class="form-check-input" id="samba" value="samba">
+                        <label for="samba" class="form-check-label"> Samba</label>
+                    </div>
+                    <div class="form-check form-check-inlines">
+                        <input type="checkbox" class="form-check-input" id="sertanejo" value="sertanejo">
+                        <label for="sertanejo" class="form-check-label"> Sertanejo</label>
+                    </div>
+                    <label for="time">Time do coração</label>
+                    <div>
+                        <select class="form-select"  id="time">
+                            
+                            <option value="Brasil">Brasil</option>
+                            <option value="Argentina" >Argentina</option>
+                            <option value="EUA">EUA</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3" onclick="salvar()"> Salvar</button>
+            <!--</form>-->
+             
+        </div>
+        <div class="col-md-4 bg-light borderv p-3">
+              <p id="resposta"> ...</p>
+        </div>
+
+     </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
